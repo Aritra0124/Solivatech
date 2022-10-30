@@ -37,7 +37,7 @@ class DogDetails(APIView):
 
     def put(self, request, id=None, format=None):
         dog = Dog.objects.get(pk=id)
-        serializer = BreedSerializer(dog, data=request.data)
+        serializer = DogSerializer(dog, data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response({"status": "success", "data": serializer.data}, status=status.HTTP_200_OK)
