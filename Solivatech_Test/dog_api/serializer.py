@@ -3,12 +3,12 @@ from .models import Dog, Breed
 
 
 class BreedSerializer(serializers.ModelSerializer):
-    name = serializers.CharField(max_length=250)
-    size = serializers.CharField()
-    friendliness = serializers.IntegerField()
-    trainability = serializers.IntegerField()
-    sheddingamount = serializers.IntegerField()
-    exerciseneeds = serializers.IntegerField()
+    # name = serializers.CharField(max_length=250)
+    # size = serializers.CharField()
+    # friendliness = serializers.IntegerField()
+    # trainability = serializers.IntegerField()
+    # sheddingamount = serializers.IntegerField()
+    # exerciseneeds = serializers.IntegerField()
 
     class Meta:
         model = Breed
